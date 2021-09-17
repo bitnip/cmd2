@@ -42,8 +42,3 @@ Simple parser for MD2 files.
 
 ## Known Issues
 - No unit tests yet.
-
----
-
-## Authors
-- Paige Xura
