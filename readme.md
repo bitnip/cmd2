@@ -34,6 +34,3 @@ cygwin packages:
 
 ### Documentation
 `> make docs`
-
-## Known Issues
-- No unit tests.
