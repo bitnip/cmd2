@@ -60,15 +60,15 @@ struct MD2Frame {
 };
 
 struct MD2 {
-    struct MD2Header* header;
-    struct MD2Texture* textures;
-    struct MD2Unwrap* unwraps;
-    struct MD2Face* faces;
-    struct MD2Frame* frames;
+    struct MD2Header *header;
+    struct MD2Texture *textures;
+    struct MD2Unwrap *unwraps;
+    struct MD2Face *faces;
+    struct MD2Frame *frames;
 };
 
-struct MD2Frame* md2GetFrame(struct MD2* md2, unsigned int index);
-struct MD2Vertex* md2GetVerticies(struct MD2Frame* frame, unsigned int index);
+struct MD2Frame *md2GetFrame(struct MD2 *md2, unsigned int index);
+struct MD2Vertex *md2GetVerticies(struct MD2Frame *frame, unsigned int index);
 
 #ifdef __cplusplus
 }

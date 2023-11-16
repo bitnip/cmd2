@@ -164,12 +164,12 @@ float precomputedNormals[162][3] =
 { -0.587785f, -0.425325f, -0.688191f }, 
 { -0.688191f, -0.587785f, -0.425325f }};
 
-struct MD2Frame* md2GetFrame(struct MD2* md2, unsigned int index) {
+struct MD2Frame* md2GetFrame(struct MD2 *md2, unsigned int index) {
     unsigned int vertexCount = md2->header->vertexCount;
     unsigned int frameSize = sizeof(struct MD2Frame) + vertexCount * sizeof(struct MD2Vertex);
     return (struct MD2Frame*)(((char*)md2->frames) + frameSize * index);
 }
 
-struct MD2Vertex* md2GetVerticies(struct MD2Frame* frame, unsigned int index) {
+struct MD2Vertex* md2GetVerticies(struct MD2Frame *frame, unsigned int index) {
     return (struct MD2Vertex*)(frame + 1) + index;
 }

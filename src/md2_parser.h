@@ -6,7 +6,7 @@ extern "C"{
 
 #include "md2.h"
 
-unsigned int parseMD2(struct MD2* md2, char* buffer, unsigned int size);
+unsigned int parseMD2(struct MD2 *md2, char *buffer, unsigned int size);
 
 #ifdef __cplusplus
 }
